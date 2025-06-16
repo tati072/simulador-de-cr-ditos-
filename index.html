@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de crédito</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de crédito</h1>
+        <h2>Impulso</h2>
+        <label for="institucion">Seleccione una Institución Financiera:</label>
+        <select id="institucion">
+            <option value="16.77">Banco Pichincha - Consumo (16.77%)</option>
+<option value="11.5">Banco Pichincha - Hipotecario (11.5%)</option>
+<option value="16.77">Produbanco - Consumo (16.77%)</option>
+<option value="5.0">BanEcuador - Productivo (5.0%)</option>
+<option value="17.23">BanEcuador - Microcrédito (17.23%)</option>
+<option value="16.21">Banco Guayaquil - Consumo (16.21%)</option>
+<option value="8.0">Coop. JEP - Plazo Fijo (8.0%)</option>
+<option value="0.5">Alianza del Valle - Pasiva (0.5%)</option>
+<option value="7.0">Coop. Pablo Muñoz Vega - Plazo Fijo (7.0%)</option>
+<option value="10.52">COOPERATIVA ATUNTAQUI (10.52%)</option>
+<option value="21.8">COOPERATIVA ANDALUCIA (21.8%)</option>
+<option value="11.5">COOPERATIVA AMBATO (11.5%)</option>
+<option value="15.83">COOPERATIVA ALIANZA DEL MINAS (15.83%)</option>
+<option value="12.5">BANCO GUAYAQUIL (12.5%)</option>
+<option value="10.75">BANCO INTERNACIONAL (10.75%)</option>
+<option value="13.0">BANCO PRODUBANCO (13.0%)</option>
+<option value="11.2">BANCO PICHINCHA (11.2%)</option>
+        </select>
+        <label for="monto">Monto del préstamo:</label>
+        <input type="number" id="monto" placeholder="Ingrese el monto">
+        <label for="plazo">Plazo (en meses):</label>
+        <input type="number" id="plazo" placeholder="Ingrese el plazo">
+        <button onclick="calcular()">Calcular</button>
+        <h2>Tabla Amortización Francesa</h2>
+        <table id="tablaFrancesa" class="amortizacion-table"></table>
+        <h2>Tabla Amortización Alemana</h2>
+        <table id="tablaAlemana" class="amortizacion-table"></table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
